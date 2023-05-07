@@ -8,12 +8,17 @@ Thu 04 May 2023 04:44:49 PM UTC:
  tests:  2|4
 total_score: 15/70
 77f43ba
+<<<<<<< HEAD
 Sun 07 May 2023 03:40:25 AM UTC: 
+=======
+Thu 04 May 2023 05:29:26 PM UTC: 
+>>>>>>> acd065381d78546ecc8c78d286e4728397f2cb32
  sudoku.c | 27 +++++++++++++++++++++++++++
  1 file changed, 27 insertions(+)
  tests:  2|4
 total_score: 15/70
 aa06f2c
+<<<<<<< HEAD
 Sun 07 May 2023 03:49:04 AM UTC: 
  sudoku.c | 24 +++++++++++++++++++++++-
  1 file changed, 23 insertions(+), 1 deletion(-)
@@ -55,3 +60,42 @@ Sun 07 May 2023 04:03:43 AM UTC:
  tests:  10|0
 total_score: 70/70
 4c136e5
+=======
+>>>>>>> acd065381d78546ecc8c78d286e4728397f2cb32
+Sun 07 May 2023 04:04:11 AM UTC: 
+ sudoku.c | Unmerged
+ sudoku.c | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:47:1: error: version control conflict marker in file
+   47 | <<<<<<< HEAD
+      | ^~~~~~~
+sudoku.c:89:7: error: ‘i’ undeclared (first use in this function)
+   89 |   for(i = 0 ; i < 9 ; i++){
+      |       ^
+sudoku.c:89:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:92:9: error: ‘j’ undeclared (first use in this function)
+   92 |     for(j = 0 ; j < 9 ; j++){
+      |         ^
+sudoku.c:93:7: error: ‘num’ undeclared (first use in this function)
+   93 |       num = n->sudo[i][j];
+      |       ^~~
+sudoku.c:102:7: error: ‘numColumna’ undeclared (first use in this function)
+  102 |       numColumna = n->sudo[j][i];
+      |       ^~~~~~~~~~
+sudoku.c:91:9: error: variable ‘columnas’ set but not used [-Werror=unused-but-set-variable]
+   91 |     int columnas[10] = {0,0,0,0,0,0,0,0,0,0};
+      |         ^~~~~~~~
+sudoku.c:90:9: error: variable ‘filas’ set but not used [-Werror=unused-but-set-variable]
+   90 |     int filas[10] = {0,0,0,0,0,0,0,0,0,0};
+      |         ^~~~~
+sudoku.c:114:1: error: version control conflict marker in file
+  114 | >>>>>>> acd065381d78546ecc8c78d286e4728397f2cb32
+      | ^~~~~~~
+sudoku.c:118:1: error: control reaches end of non-void function [-Werror=return-type]
+  118 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+63c8ce1
