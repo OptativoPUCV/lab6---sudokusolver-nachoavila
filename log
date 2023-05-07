@@ -20,3 +20,14 @@ Sun 07 May 2023 03:49:04 AM UTC:
  tests:  3|3
 total_score: 25/70
 76f8428
+Sun 07 May 2023 03:53:18 AM UTC: 
+ sudoku.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:90:25: error: statement with no effect [-Werror=unused-value]
+   90 |           n->sudo[i][j] == num;
+      |           ~~~~~~~~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9730e29
